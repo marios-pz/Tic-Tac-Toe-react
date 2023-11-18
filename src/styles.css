@@ -1,0 +1,48 @@
+html, body {
+  background-color: rgb(154, 222, 123);
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+    font-size: 48px;
+    text-align: center;
+}
+
+.grid {
+    margin-left: auto;
+    margin-right: auto;
+    width: 375px;
+    height: 375px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.square {
+    width: 160px;
+    height: 160px;
+    border: 2px solid rgb(80, 141, 105);
+    background-color: rgb(238, 242, 150);
+    font-size: 64px;
+    font-style: bold;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square:hover {
+    background-color: rgb(255, 143, 143);
+}
+
+.status {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.board-row:after {
+  clear: both;
+  content: '';
+  display: table;
+}
